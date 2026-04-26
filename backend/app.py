@@ -34,7 +34,13 @@ migrate.init_app(app, db)
 # CORS configuration
 cors.init_app(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:3000", "http://localhost:3001", "http://localhost:5173"],
+        "origins": [
+            "http://localhost:3000",
+            "http://localhost:3001",
+            "http://localhost:5173",
+            "https://frontend-rouge-two-73.vercel.app",
+            "https://*.vercel.app"
+        ],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "supports_credentials": True
@@ -108,12 +114,16 @@ def index():
         }
     }), 200
 
-if __name__ == '__main__':
-    # Import models here to avoid circular imports
+# Initialize database tables (for Vercel serverless)
+with app.app_context():
     import models
-    
-    with app.app_context():
+    try:
         db.create_all()
+        app.logger.info('Database tables created successfully')
+    except Exception as e:
+        app.logger.error(f'Error creating database tables: {e}')
+
+if __name__ == '__main__':
     app.run(
         host=os.getenv('HOST', '0.0.0.0'),
         port=int(os.getenv('PORT', 5000)),
