@@ -20,7 +20,13 @@ app.url_map.strict_slashes = False
 
 # Configuration
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev-secret-key-change-in-production')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///mahad_manpower.db')
+
+# Use /tmp directory for SQLite on Vercel serverless
+if os.getenv('VERCEL'):
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/mahad_manpower.db'
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///mahad_manpower.db')
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'jwt-secret-key-change-in-production')
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=24)
@@ -47,16 +53,18 @@ cors.init_app(app, resources={
     }
 })
 
-# Logging configuration
-if not os.path.exists('logs'):
-    os.mkdir('logs')
+# Logging configuration - Skip file logging on Vercel
+if not os.getenv('VERCEL'):
+    if not os.path.exists('logs'):
+        os.mkdir('logs')
+    
+    file_handler = RotatingFileHandler('logs/mahad_manpower.log', maxBytes=10240000, backupCount=10)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
+    ))
+    file_handler.setLevel(logging.INFO)
+    app.logger.addHandler(file_handler)
 
-file_handler = RotatingFileHandler('logs/mahad_manpower.log', maxBytes=10240000, backupCount=10)
-file_handler.setFormatter(logging.Formatter(
-    '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
-))
-file_handler.setLevel(logging.INFO)
-app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
 app.logger.info('Mahad Manpower API startup')
 
