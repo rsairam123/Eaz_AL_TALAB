@@ -60,22 +60,22 @@ const Jobs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-8 md:py-16">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Construction Jobs in Dubai, UAE</h1>
-          <p className="text-xl text-gray-300 mb-4">All positions include visa sponsorship from India to Dubai</p>
-          <div className="flex flex-wrap gap-3">
-            <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-              <FaCheckCircle className="text-yellow-300" />
-              <span className="text-sm">Visa Sponsorship</span>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Construction Jobs in Dubai, UAE</h1>
+          <p className="text-base md:text-xl text-gray-100 mb-3 md:mb-4">All positions include visa sponsorship from India to Dubai</p>
+          <div className="flex flex-wrap gap-2 md:gap-3">
+            <div className="flex items-center space-x-1 md:space-x-2 bg-white/20 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full">
+              <FaCheckCircle className="text-yellow-300 text-sm md:text-base" />
+              <span className="text-xs md:text-sm">Visa Sponsorship</span>
             </div>
-            <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-              <FaCheckCircle className="text-yellow-300" />
-              <span className="text-sm">Accommodation</span>
+            <div className="flex items-center space-x-1 md:space-x-2 bg-white/20 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full">
+              <FaCheckCircle className="text-yellow-300 text-sm md:text-base" />
+              <span className="text-xs md:text-sm">Accommodation</span>
             </div>
-            <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-              <FaCheckCircle className="text-yellow-300" />
-              <span className="text-sm">Medical Insurance</span>
+            <div className="flex items-center space-x-1 md:space-x-2 bg-white/20 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full">
+              <FaCheckCircle className="text-yellow-300 text-sm md:text-base" />
+              <span className="text-xs md:text-sm">Medical Insurance</span>
             </div>
           </div>
         </div>
@@ -97,35 +97,35 @@ const Jobs = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {jobCategories.map((category, index) => (
               <Link
                 key={index}
                 to="/contact"
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group relative bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={category.image} 
+                <div className="relative h-32 md:h-48 overflow-hidden">
+                  <img
+                    src={category.image}
                     alt={category.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      {category.icon}
+                  <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4">
+                    <div className="w-10 h-10 md:w-14 md:h-14 bg-white rounded-lg md:rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <div className="text-2xl md:text-4xl">{category.icon}</div>
                     </div>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <div className="p-3 md:p-6">
+                  <h3 className="text-sm md:text-xl font-heading font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors line-clamp-1">
                     {category.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  <p className="text-gray-600 text-xs md:text-sm mb-2 md:mb-4 leading-relaxed line-clamp-2">
                     {category.description}
                   </p>
-                  <span className="text-blue-600 font-semibold text-sm inline-flex items-center group-hover:gap-2 transition-all">
-                    View Jobs <FaArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-blue-600 font-semibold text-xs md:text-sm inline-flex items-center group-hover:gap-2 transition-all">
+                    View Jobs <FaArrowRight className="ml-1 group-hover:translate-x-1 transition-transform text-xs md:text-sm" />
                   </span>
                 </div>
               </Link>
@@ -141,24 +141,24 @@ const Jobs = () => {
       </section>
 
       {/* Quick Stats Section */}
-      <section className="py-12 bg-white">
+      <section className="py-8 md:py-12 bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
-              <div className="text-4xl font-bold text-blue-600 mb-2">100+</div>
-              <div className="text-gray-700 font-medium">Active Jobs</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+            <div className="text-center p-4 md:p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg md:rounded-xl">
+              <div className="text-2xl md:text-4xl font-bold text-blue-600 mb-1 md:mb-2">100+</div>
+              <div className="text-gray-700 font-medium text-xs md:text-base">Active Jobs</div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
-              <div className="text-4xl font-bold text-purple-600 mb-2">5000+</div>
-              <div className="text-gray-700 font-medium">Workers Placed</div>
+            <div className="text-center p-4 md:p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg md:rounded-xl">
+              <div className="text-2xl md:text-4xl font-bold text-purple-600 mb-1 md:mb-2">5000+</div>
+              <div className="text-gray-700 font-medium text-xs md:text-base">Workers Placed</div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl">
-              <div className="text-4xl font-bold text-pink-600 mb-2">50+</div>
-              <div className="text-gray-700 font-medium">Partner Companies</div>
+            <div className="text-center p-4 md:p-6 bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg md:rounded-xl">
+              <div className="text-2xl md:text-4xl font-bold text-pink-600 mb-1 md:mb-2">50+</div>
+              <div className="text-gray-700 font-medium text-xs md:text-base">Partner Companies</div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">95%</div>
-              <div className="text-gray-700 font-medium">Success Rate</div>
+            <div className="text-center p-4 md:p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-lg md:rounded-xl">
+              <div className="text-2xl md:text-4xl font-bold text-cyan-600 mb-1 md:mb-2">95%</div>
+              <div className="text-gray-700 font-medium text-xs md:text-base">Success Rate</div>
             </div>
           </div>
         </div>
@@ -176,28 +176,28 @@ const Jobs = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             <a
               href="tel:+916304016994"
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
+              className="bg-white rounded-lg md:rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
             >
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-                <FaPhone className="text-2xl text-blue-600" />
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4 group-hover:bg-blue-200 transition-colors">
+                <FaPhone className="text-lg md:text-2xl text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-2">Mon-Sat: 9AM - 6PM</p>
-              <p className="text-blue-600 font-semibold">+91 6304016994</p>
+              <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Call Us</h3>
+              <p className="text-xs md:text-base text-gray-600 mb-1 md:mb-2">Mon-Sat: 9AM - 6PM</p>
+              <p className="text-blue-600 font-semibold text-xs md:text-base">+91 6304016994</p>
             </a>
 
             <a
               href="tel:+917075018407"
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
+              className="bg-white rounded-lg md:rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
             >
-              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-indigo-200 transition-colors">
-                <FaPhone className="text-2xl text-indigo-600" />
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4 group-hover:bg-indigo-200 transition-colors">
+                <FaPhone className="text-lg md:text-2xl text-indigo-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-2">Mon-Sat: 9AM - 6PM</p>
+              <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Call Us</h3>
+              <p className="text-xs md:text-base text-gray-600 mb-1 md:mb-2">Mon-Sat: 9AM - 6PM</p>
               <p className="text-indigo-600 font-semibold">+91 7075018407</p>
             </a>
 
