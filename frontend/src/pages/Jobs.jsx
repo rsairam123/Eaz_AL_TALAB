@@ -205,26 +205,26 @@ const Jobs = () => {
               href="https://wa.me/916304016994"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
+              className="bg-white rounded-lg md:rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
             >
-              <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-100 transition-colors">
-                <FaWhatsapp className="text-2xl text-emerald-500" />
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4 group-hover:bg-blue-100 transition-colors">
+                <FaWhatsapp className="text-lg md:text-2xl text-blue-500" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-gray-600 mb-2">Quick Response</p>
-              <p className="text-emerald-500 font-semibold">Chat with Us</p>
+              <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">WhatsApp</h3>
+              <p className="text-xs md:text-base text-gray-600 mb-1 md:mb-2">Quick Response</p>
+              <p className="text-blue-500 font-semibold text-xs md:text-base">Chat with Us</p>
             </a>
 
             <Link
               to="/contact"
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
+              className="bg-white rounded-lg md:rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group"
             >
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
-                <FaEnvelope className="text-2xl text-purple-600" />
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-4 group-hover:bg-purple-200 transition-colors">
+                <FaEnvelope className="text-lg md:text-2xl text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">Send Your Resume</p>
-              <p className="text-purple-600 font-semibold">Contact Form</p>
+              <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Email Us</h3>
+              <p className="text-xs md:text-base text-gray-600 mb-1 md:mb-2">Send Your Resume</p>
+              <p className="text-purple-600 font-semibold text-xs md:text-base">Contact Form</p>
             </Link>
           </div>
         </div>

@@ -65,58 +65,58 @@ const Contact = () => {
       <div className="container-custom py-8 md:py-16 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="lg:col-span-1 space-y-4 md:space-y-6">
-            <div className="card shadow-lg hover:shadow-xl transition-shadow p-4 md:p-6">
-              <div className="flex items-center space-x-2 md:space-x-3 mb-3 md:mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center flex-shrink-0">
-                  <FaBuilding className="text-white text-base md:text-xl" />
+            <div className="card shadow-lg hover:shadow-xl transition-shadow p-2.5 md:p-5 lg:p-6">
+              <div className="flex items-center space-x-2 md:space-x-3 mb-2 md:mb-3 lg:mb-4">
+                <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FaBuilding className="text-white text-sm md:text-base lg:text-xl" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-base md:text-xl text-gray-900">EAZ AL TALAB</h3>
-                  <p className="text-xs md:text-sm text-gray-600">Dubai Construction Recruitment</p>
+                  <h3 className="font-heading font-bold text-sm md:text-base lg:text-xl text-gray-900 leading-tight">EAZ AL TALAB</h3>
+                  <p className="text-xs md:text-sm text-gray-600 leading-tight">Dubai Construction Recruitment</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-600 text-xs md:text-sm leading-snug">
                 Government-licensed recruitment agency specializing in placing Indian construction workers in Dubai, UAE with full visa sponsorship.
               </p>
             </div>
 
-            <div className="card shadow-lg hover:shadow-xl transition-shadow space-y-3 md:space-y-4 p-4 md:p-6">
-              <h3 className="font-heading font-semibold text-base md:text-lg text-gray-900 mb-3 md:mb-4">Contact Information</h3>
+            <div className="card shadow-lg hover:shadow-xl transition-shadow space-y-2 md:space-y-3 lg:space-y-4 p-2.5 md:p-5 lg:p-6">
+              <h3 className="font-heading font-semibold text-sm md:text-base lg:text-lg text-gray-900 mb-2 md:mb-3 lg:mb-4 leading-tight">Contact Information</h3>
               
-              <div className="flex items-start space-x-3 md:space-x-4">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaPhone className="text-blue-700 text-sm md:text-base" />
+              <div className="flex items-start space-x-2 md:space-x-3 lg:space-x-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaPhone className="text-blue-700 text-xs md:text-sm lg:text-base" />
                 </div>
                 <div>
-                  <p className="text-xs md:text-sm text-gray-600 mb-1">Phone Numbers</p>
-                  <a href="tel:+916304016994" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block text-sm md:text-base">
+                  <p className="text-xs md:text-sm text-gray-600 mb-0.5 md:mb-1 leading-tight">Phone Numbers</p>
+                  <a href="tel:+916304016994" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block text-xs md:text-sm lg:text-base leading-tight">
                     +91 6304016994
                   </a>
-                  <a href="tel:+917075018407" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block mt-1 text-sm md:text-base">
+                  <a href="tel:+917075018407" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block mt-0.5 text-xs md:text-sm lg:text-base leading-tight">
                     +91 7075018407
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3 md:space-x-4">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaEnvelope className="text-orange-700 text-sm md:text-base" />
+              <div className="flex items-start space-x-2 md:space-x-3 lg:space-x-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaEnvelope className="text-orange-700 text-xs md:text-sm lg:text-base" />
                 </div>
                 <div>
-                  <p className="text-xs md:text-sm text-gray-600 mb-1">Email</p>
-                  <a href="mailto:sairam280403@gmail.com" className="text-gray-900 font-medium hover:text-orange-600 transition-colors break-all text-sm md:text-base">
+                  <p className="text-xs md:text-sm text-gray-600 mb-0.5 md:mb-1 leading-tight">Email</p>
+                  <a href="mailto:sairam280403@gmail.com" className="text-gray-900 font-medium hover:text-orange-600 transition-colors break-all text-xs md:text-sm lg:text-base leading-tight">
                     sairam280403@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3 md:space-x-4">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaMapMarkerAlt className="text-purple-700 text-sm md:text-base" />
+              <div className="flex items-start space-x-2 md:space-x-3 lg:space-x-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaMapMarkerAlt className="text-purple-700 text-xs md:text-sm lg:text-base" />
                 </div>
                 <div>
-                  <p className="text-xs md:text-sm text-gray-600 mb-1">Location</p>
-                  <p className="text-gray-900 font-medium text-sm md:text-base">India & Dubai, UAE</p>
+                  <p className="text-xs md:text-sm text-gray-600 mb-0.5 md:mb-1 leading-tight">Location</p>
+                  <p className="text-gray-900 font-medium text-xs md:text-sm lg:text-base leading-tight">India & Dubai, UAE</p>
                 </div>
               </div>
             </div>
@@ -276,28 +276,28 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <FaPhone className="text-indigo-700 text-xl" />
+            <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 lg:gap-6">
+              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group p-2.5 md:p-5 lg:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full flex items-center justify-center mx-auto mb-1.5 md:mb-2 lg:mb-3 group-hover:scale-110 transition-transform">
+                  <FaPhone className="text-indigo-700 text-base md:text-lg lg:text-xl" />
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-1">Quick Response</h4>
-                <p className="text-sm text-gray-600">We respond within 24 hours</p>
+                <h4 className="font-semibold text-gray-900 mb-0.5 md:mb-1 text-sm md:text-base leading-tight">Quick Response</h4>
+                <p className="text-xs md:text-sm text-gray-600 leading-snug">We respond within 24 hours</p>
               </div>
 
-              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <FaWhatsapp className="text-white text-xl" />
+              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group p-2.5 md:p-5 lg:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-1.5 md:mb-2 lg:mb-3 group-hover:scale-110 transition-transform">
+                  <FaWhatsapp className="text-white text-base md:text-lg lg:text-xl" />
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-1">WhatsApp Support</h4>
-                <p className="text-sm text-gray-600">Instant messaging available</p>
+                <h4 className="font-semibold text-gray-900 mb-0.5 md:mb-1 text-sm md:text-base leading-tight">WhatsApp Support</h4>
+                <p className="text-xs md:text-sm text-gray-600 leading-snug">Instant messaging available</p>
               </div>
 
-              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <FaEnvelope className="text-orange-700 text-xl" />
+              <div className="card shadow-md hover:shadow-lg transition-shadow text-center group p-2.5 md:p-5 lg:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-1.5 md:mb-2 lg:mb-3 group-hover:scale-110 transition-transform">
+                  <FaEnvelope className="text-orange-700 text-base md:text-lg lg:text-xl" />
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-1">Email Support</h4>
+                <h4 className="font-semibold text-gray-900 mb-0.5 md:mb-1 text-sm md:text-base leading-tight">Email Support</h4>
                 <p className="text-sm text-gray-600">Professional assistance</p>
               </div>
             </div>

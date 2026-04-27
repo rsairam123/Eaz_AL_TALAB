@@ -224,12 +224,12 @@ const Home = () => {
                 color: 'purple'
               }
             ].map((item, index) => (
-              <div key={index} className="card card-hover text-center group p-3 md:p-5 lg:p-6">
-                <div className={`w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-2 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
-                  {item.icon}
+              <div key={index} className="card card-hover text-center group p-2 md:p-5 lg:p-6">
+                <div className={`w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-1.5 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
+                  {React.cloneElement(item.icon, { className: 'text-lg md:text-2xl lg:text-4xl text-' + item.color + '-500' })}
                 </div>
-                <h3 className="text-sm md:text-lg lg:text-xl font-heading font-bold text-gray-900 mb-1 md:mb-2 lg:mb-3">{item.title}</h3>
-                <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">{item.description}</p>
+                <h3 className="text-xs md:text-lg lg:text-xl font-heading font-bold text-gray-900 mb-0.5 md:mb-2 lg:mb-3 leading-tight">{item.title}</h3>
+                <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-snug">{item.description}</p>
               </div>
             ))}
           </div>
@@ -404,24 +404,24 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="card card-hover p-4 md:p-6">
-                <div className="flex items-center mb-3 md:mb-4">
+              <div key={index} className="card card-hover p-2.5 md:p-6">
+                <div className="flex items-center mb-2 md:mb-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mr-3 md:mr-4 border-2 md:border-4 border-purple-100"
+                    className="w-10 h-10 md:w-16 md:h-16 rounded-full object-cover mr-2 md:mr-4 border-2 md:border-4 border-purple-100"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900 text-sm md:text-base">{testimonial.name}</h4>
+                    <h4 className="font-bold text-gray-900 text-xs md:text-base leading-tight">{testimonial.name}</h4>
                     <p className="text-xs md:text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="flex mb-2 md:mb-3">
+                <div className="flex mb-1.5 md:mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-400 text-xs md:text-base" />
                   ))}
                 </div>
-                <p className="text-gray-700 leading-relaxed italic text-xs md:text-sm lg:text-base">"{testimonial.text}"</p>
+                <p className="text-gray-700 leading-snug italic text-xs md:text-sm lg:text-base">"{testimonial.text}"</p>
               </div>
             ))}
           </div>

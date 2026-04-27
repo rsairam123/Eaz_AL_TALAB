@@ -161,18 +161,18 @@ const About = () => {
               The principles that guide everything we do in our recruitment and placement services
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 lg:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5 lg:gap-6">
             {values.map((value, index) => (
-              <div key={index} className="card text-center p-3 md:p-5 lg:p-6">
-                <div className="flex justify-center mb-2 md:mb-4">
-                  <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-blue-50 rounded-full flex items-center justify-center">
-                    {React.cloneElement(value.icon, { className: 'text-2xl md:text-3xl lg:text-4xl text-blue-500' })}
+              <div key={index} className="card text-center p-2 md:p-5 lg:p-6">
+                <div className="flex justify-center mb-1.5 md:mb-4">
+                  <div className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-blue-50 rounded-full flex items-center justify-center">
+                    {React.cloneElement(value.icon, { className: 'text-xl md:text-3xl lg:text-4xl text-blue-500' })}
                   </div>
                 </div>
-                <h3 className="text-sm md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1.5 md:mb-3">
+                <h3 className="text-xs md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1 md:mb-3 leading-tight">
                   {value.title}
                 </h3>
-                <p className="text-xs md:text-sm lg:text-base text-gray-600">
+                <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-snug">
                   {value.description}
                 </p>
               </div>
@@ -209,18 +209,18 @@ const About = () => {
         </div>
 
         {/* Government Licensing */}
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl md:rounded-2xl p-4 md:p-8 lg:p-12 mb-8 md:mb-12 lg:mb-16">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl md:rounded-2xl p-3 md:p-8 lg:p-12 mb-8 md:mb-12 lg:mb-16">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
             <div>
-              <div className="flex items-center space-x-2 md:space-x-3 mb-4 md:mb-6">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <FaCertificate className="text-white text-base md:text-xl" />
+              <div className="flex items-center space-x-2 md:space-x-3 mb-3 md:mb-6">
+                <div className="w-8 h-8 md:w-12 md:h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FaCertificate className="text-white text-sm md:text-xl" />
                 </div>
-                <h2 className="text-lg md:text-2xl lg:text-3xl font-heading font-bold text-gray-900">
+                <h2 className="text-sm md:text-2xl lg:text-3xl font-heading font-bold text-gray-900 leading-tight">
                   Government Licensed & Authorized
                 </h2>
               </div>
-              <div className="space-y-3 md:space-y-4 text-gray-700 text-sm md:text-base">
+              <div className="space-y-2 md:space-y-4 text-gray-700 text-xs md:text-base">
                 <p>
                   <strong className="text-gray-900">EAZ AL TALAB</strong> is fully licensed and authorized by the 
                   UAE government to conduct manpower recruitment activities. Our license ensures:
@@ -280,40 +280,40 @@ const About = () => {
               What sets us apart as the preferred recruitment partner for construction workers and companies
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <FaGlobe className="text-blue-600 text-xl" />
+          <div className="grid md:grid-cols-3 gap-3 md:gap-5 lg:gap-6">
+            <div className="card p-2.5 md:p-5 lg:p-6">
+              <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-1.5 md:mb-3 lg:mb-4">
+                <FaGlobe className="text-blue-600 text-base md:text-lg lg:text-xl" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-3">
+              <h3 className="text-sm md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1 md:mb-2 lg:mb-3 leading-tight">
                 India-Dubai Expertise
               </h3>
-              <p className="text-gray-600">
-                Deep understanding of both Indian labor market and Dubai construction industry requirements, 
+              <p className="text-gray-600 text-xs md:text-sm lg:text-base leading-snug">
+                Deep understanding of both Indian labor market and Dubai construction industry requirements,
                 ensuring perfect matches.
               </p>
             </div>
-            <div className="card">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <FaHardHat className="text-purple-600 text-xl" />
+            <div className="card p-2.5 md:p-5 lg:p-6">
+              <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-1.5 md:mb-3 lg:mb-4">
+                <FaHardHat className="text-purple-600 text-base md:text-lg lg:text-xl" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-3">
+              <h3 className="text-sm md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1 md:mb-2 lg:mb-3 leading-tight">
                 Construction Specialists
               </h3>
-              <p className="text-gray-600">
-                Exclusive focus on construction sector recruitment, with expertise across all trades from 
+              <p className="text-gray-600 text-xs md:text-sm lg:text-base leading-snug">
+                Exclusive focus on construction sector recruitment, with expertise across all trades from
                 laborers to supervisors.
               </p>
             </div>
-            <div className="card">
-              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                <FaHandshake className="text-indigo-600 text-xl" />
+            <div className="card p-2.5 md:p-5 lg:p-6">
+              <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-1.5 md:mb-3 lg:mb-4">
+                <FaHandshake className="text-indigo-600 text-base md:text-lg lg:text-xl" />
               </div>
-              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-3">
+              <h3 className="text-sm md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1 md:mb-2 lg:mb-3 leading-tight">
                 Complete Support
               </h3>
-              <p className="text-gray-600">
-                End-to-end service from recruitment to placement, including visa processing, travel, and 
+              <p className="text-gray-600 text-xs md:text-sm lg:text-base leading-snug">
+                End-to-end service from recruitment to placement, including visa processing, travel, and
                 ongoing worker support.
               </p>
             </div>
