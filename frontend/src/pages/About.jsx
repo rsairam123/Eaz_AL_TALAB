@@ -52,15 +52,15 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-20">
-        <div className="container-custom">
+      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-8 md:py-16 lg:py-20">
+        <div className="container-custom px-4">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <FaCertificate className="text-yellow-300" />
-              <span className="text-sm font-semibold">Government Licensed & Authorized</span>
+            <div className="inline-flex items-center space-x-1.5 md:space-x-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-3 md:mb-6">
+              <FaCertificate className="text-yellow-300 text-sm md:text-base" />
+              <span className="text-xs md:text-sm font-semibold">Government Licensed & Authorized</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">About EAZ AL TALAB</h1>
-            <p className="text-xl text-gray-300">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-6">About EAZ AL TALAB</h1>
+            <p className="text-sm md:text-lg lg:text-xl text-gray-200">
               Your trusted partner for construction manpower recruitment from India to Dubai, UAE
             </p>
           </div>
@@ -68,14 +68,14 @@ const About = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container-custom py-16">
+      <div className="container-custom py-6 md:py-12 lg:py-16 px-4">
         {/* Company Overview */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center mb-8 md:mb-12 lg:mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-3 md:mb-5 lg:mb-6">
               Connecting Indian Talent with Dubai's Construction Industry
             </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-3 md:space-y-4 text-gray-700 leading-relaxed text-sm md:text-base">
               <p>
                 <strong className="text-gray-900">EAZ AL TALAB</strong> is a government-licensed manpower recruitment agency 
                 specializing in providing skilled and unskilled construction workers from India to leading construction 
@@ -99,80 +99,80 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop" 
-              alt="Dubai skyline" 
-              className="rounded-lg shadow-lg object-cover h-48"
+          <div className="grid grid-cols-2 gap-2 md:gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop"
+              alt="Dubai skyline"
+              className="rounded-lg shadow-lg object-cover h-32 md:h-40 lg:h-48"
             />
-            <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop" 
-              alt="Construction workers" 
-              className="rounded-lg shadow-lg object-cover h-48 mt-8"
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop"
+              alt="Construction workers"
+              className="rounded-lg shadow-lg object-cover h-32 md:h-40 lg:h-48 mt-4 md:mt-8"
             />
-            <img 
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop" 
-              alt="Construction site" 
-              className="rounded-lg shadow-lg object-cover h-48"
+            <img
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop"
+              alt="Construction site"
+              className="rounded-lg shadow-lg object-cover h-32 md:h-40 lg:h-48"
             />
-            <img 
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=300&fit=crop" 
-              alt="Dubai construction" 
-              className="rounded-lg shadow-lg object-cover h-48 mt-8"
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=300&fit=crop"
+              alt="Dubai construction"
+              className="rounded-lg shadow-lg object-cover h-32 md:h-40 lg:h-48 mt-4 md:mt-8"
             />
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-12 lg:mb-16">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-md text-center hover:shadow-lg transition-shadow">
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-1">{stat.number}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+            <div key={index} className="bg-white rounded-lg md:rounded-xl p-3 md:p-5 lg:p-6 shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 mb-0.5 md:mb-1">{stat.number}</div>
+              <div className="text-xs md:text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
         </div>
 
         {/* Our Mission */}
-        <div className="bg-gradient-to-br from-blue-50 to-purple-100 rounded-2xl p-8 md:p-12 mb-20">
+        <div className="bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl md:rounded-2xl p-4 md:p-8 lg:p-12 mb-8 md:mb-12 lg:mb-16">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FaBuilding className="text-white text-2xl" />
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6">
+              <FaBuilding className="text-white text-xl md:text-2xl" />
             </div>
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Our Mission</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-gray-900 mb-3 md:mb-6">Our Mission</h2>
+            <p className="text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed mb-3 md:mb-6">
               To bridge the gap between skilled Indian construction workers seeking international opportunities and 
               Dubai's growing construction industry by providing ethical, transparent, and comprehensive recruitment 
               services that benefit both workers and employers.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We are committed to ensuring that every worker we place has access to fair employment, safe working 
-              conditions, and the support they need to build a successful career in Dubai while maintaining the 
+            <p className="text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed">
+              We are committed to ensuring that every worker we place has access to fair employment, safe working
+              conditions, and the support they need to build a successful career in Dubai while maintaining the
               highest standards of service for our employer partners.
             </p>
           </div>
         </div>
 
         {/* Our Values */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">Our Core Values</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+        <div className="mb-8 md:mb-12 lg:mb-16">
+          <div className="text-center mb-6 md:mb-10 lg:mb-12">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-2 md:mb-4">Our Core Values</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
               The principles that guide everything we do in our recruitment and placement services
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 lg:gap-6">
             {values.map((value, index) => (
-              <div key={index} className="card text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center">
-                    {value.icon}
+              <div key={index} className="card text-center p-3 md:p-5 lg:p-6">
+                <div className="flex justify-center mb-2 md:mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-blue-50 rounded-full flex items-center justify-center">
+                    {React.cloneElement(value.icon, { className: 'text-2xl md:text-3xl lg:text-4xl text-blue-500' })}
                   </div>
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-lg lg:text-xl font-heading font-semibold text-gray-900 mb-1.5 md:mb-3">
                   {value.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-xs md:text-sm lg:text-base text-gray-600">
                   {value.description}
                 </p>
               </div>
@@ -181,27 +181,27 @@ const About = () => {
         </div>
 
         {/* Our Services */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center mb-8 md:mb-12 lg:mb-16">
           <div className="order-2 lg:order-1">
-            <img 
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop" 
-              alt="Professional team" 
-              className="rounded-2xl shadow-2xl object-cover w-full h-[500px]"
+            <img
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop"
+              alt="Professional team"
+              className="rounded-xl md:rounded-2xl shadow-2xl object-cover w-full h-64 md:h-96 lg:h-[500px]"
             />
           </div>
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-3 md:mb-5 lg:mb-6">
               Comprehensive Recruitment Services
             </h2>
-            <p className="text-gray-700 mb-6">
-              We provide end-to-end recruitment solutions, handling every aspect of the process from initial 
+            <p className="text-gray-700 mb-4 md:mb-6 text-sm md:text-base">
+              We provide end-to-end recruitment solutions, handling every aspect of the process from initial
               candidate screening in India to successful job placement in Dubai.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-2 md:space-y-3">
               {services.map((service, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <FaCheckCircle className="text-blue-500 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">{service}</span>
+                <div key={index} className="flex items-start space-x-2 md:space-x-3">
+                  <FaCheckCircle className="text-blue-500 mt-0.5 md:mt-1 flex-shrink-0 text-sm md:text-base" />
+                  <span className="text-gray-700 text-xs md:text-sm lg:text-base">{service}</span>
                 </div>
               ))}
             </div>
@@ -209,42 +209,42 @@ const About = () => {
         </div>
 
         {/* Government Licensing */}
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 md:p-12 mb-20">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl md:rounded-2xl p-4 md:p-8 lg:p-12 mb-8 md:mb-12 lg:mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
-                  <FaCertificate className="text-white text-xl" />
+              <div className="flex items-center space-x-2 md:space-x-3 mb-4 md:mb-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FaCertificate className="text-white text-base md:text-xl" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900">
+                <h2 className="text-lg md:text-2xl lg:text-3xl font-heading font-bold text-gray-900">
                   Government Licensed & Authorized
                 </h2>
               </div>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-3 md:space-y-4 text-gray-700 text-sm md:text-base">
                 <p>
                   <strong className="text-gray-900">EAZ AL TALAB</strong> is fully licensed and authorized by the 
                   UAE government to conduct manpower recruitment activities. Our license ensures:
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-1.5 md:space-y-2">
                   <li className="flex items-start">
-                    <FaCheckCircle className="text-purple-600 mt-1 mr-2 flex-shrink-0" />
-                    <span>Complete legal compliance with UAE labor laws</span>
+                    <FaCheckCircle className="text-purple-600 mt-0.5 md:mt-1 mr-2 flex-shrink-0 text-sm md:text-base" />
+                    <span className="text-xs md:text-sm lg:text-base">Complete legal compliance with UAE labor laws</span>
                   </li>
                   <li className="flex items-start">
-                    <FaCheckCircle className="text-purple-600 mt-1 mr-2 flex-shrink-0" />
-                    <span>Protection of worker rights and welfare</span>
+                    <FaCheckCircle className="text-purple-600 mt-0.5 md:mt-1 mr-2 flex-shrink-0 text-sm md:text-base" />
+                    <span className="text-xs md:text-sm lg:text-base">Protection of worker rights and welfare</span>
                   </li>
                   <li className="flex items-start">
-                    <FaCheckCircle className="text-purple-600 mt-1 mr-2 flex-shrink-0" />
-                    <span>Transparent and ethical recruitment practices</span>
+                    <FaCheckCircle className="text-purple-600 mt-0.5 md:mt-1 mr-2 flex-shrink-0 text-sm md:text-base" />
+                    <span className="text-xs md:text-sm lg:text-base">Transparent and ethical recruitment practices</span>
                   </li>
                   <li className="flex items-start">
-                    <FaCheckCircle className="text-purple-600 mt-1 mr-2 flex-shrink-0" />
-                    <span>Verified and legitimate job placements</span>
+                    <FaCheckCircle className="text-purple-600 mt-0.5 md:mt-1 mr-2 flex-shrink-0 text-sm md:text-base" />
+                    <span className="text-xs md:text-sm lg:text-base">Verified and legitimate job placements</span>
                   </li>
                   <li className="flex items-start">
-                    <FaCheckCircle className="text-purple-600 mt-1 mr-2 flex-shrink-0" />
-                    <span>Government oversight and accountability</span>
+                    <FaCheckCircle className="text-purple-600 mt-0.5 md:mt-1 mr-2 flex-shrink-0 text-sm md:text-base" />
+                    <span className="text-xs md:text-sm lg:text-base">Government oversight and accountability</span>
                   </li>
                 </ul>
               </div>

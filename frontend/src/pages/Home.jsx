@@ -110,6 +110,16 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section - Modern Gradient Design */}
       <section className="relative bg-gradient-to-br from-blue-400 via-blue-500 to-purple-500 text-white overflow-hidden">
+        {/* Background Image for Mobile */}
+        <div className="absolute inset-0 lg:hidden">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop"
+            alt="Construction workers"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/80 via-blue-600/80 to-purple-600/80"></div>
+        </div>
+        
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -117,8 +127,8 @@ const Home = () => {
           }}></div>
         </div>
         
-        <div className="container-custom relative z-10 py-8 md:py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
+        <div className="container-custom relative z-10 py-6 md:py-16 lg:py-24 px-4">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-12 items-center">
             <div className="animate-fade-in">
               {/* Trust Badge */}
               <div className="inline-flex items-center space-x-1.5 md:space-x-2 bg-white/10 backdrop-blur-md px-3 py-1.5 md:px-5 md:py-2.5 rounded-full mb-3 md:mb-6 border border-white/20">
@@ -191,9 +201,9 @@ const Home = () => {
       </section>
 
       {/* Trust Indicators - Enhanced Design */}
-      <section className="py-8 md:py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
+      <section className="py-6 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container-custom px-4">
+          <div className="grid md:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
             {[
               {
                 icon: <FaShieldAlt className="text-2xl md:text-4xl text-blue-500" />,
@@ -214,12 +224,12 @@ const Home = () => {
                 color: 'purple'
               }
             ].map((item, index) => (
-              <div key={index} className="card card-hover text-center group p-4 md:p-6">
-                <div className={`w-12 h-12 md:w-20 md:h-20 bg-${item.color}-50 rounded-xl md:rounded-2xl flex items-center justify-center mb-2 md:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
+              <div key={index} className="card card-hover text-center group p-3 md:p-5 lg:p-6">
+                <div className={`w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-2 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
                   {item.icon}
                 </div>
-                <h3 className="text-base md:text-xl font-heading font-bold text-gray-900 mb-1.5 md:mb-3">{item.title}</h3>
-                <p className="text-xs md:text-base text-gray-600 leading-relaxed">{item.description}</p>
+                <h3 className="text-sm md:text-lg lg:text-xl font-heading font-bold text-gray-900 mb-1 md:mb-2 lg:mb-3">{item.title}</h3>
+                <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -227,9 +237,9 @@ const Home = () => {
       </section>
 
       {/* Job Categories - Modern Card Design */}
-      <section className="py-8 md:py-16 lg:py-20 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-8 md:mb-16">
+      <section className="py-6 md:py-12 lg:py-16 bg-white">
+        <div className="container-custom px-4">
+          <div className="text-center mb-6 md:mb-10 lg:mb-12">
             <div className="inline-block">
               <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Available Positions</p>
               <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
@@ -279,7 +289,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="text-center mt-6 md:mt-12">
+          <div className="text-center mt-4 md:mt-8 lg:mt-10">
             <Link to="/jobs" className="btn btn-primary text-sm md:text-base lg:text-lg px-6 py-3 md:px-8 md:py-4 shadow-lg hover:shadow-xl">
               View All Construction Jobs <FaArrowRight className="text-xs md:text-base" />
             </Link>
@@ -288,9 +298,9 @@ const Home = () => {
       </section>
 
       {/* Benefits Section - Enhanced Layout */}
-      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
+      <section className="py-6 md:py-12 lg:py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="container-custom px-4">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16 items-center">
             <div>
               <div className="inline-block mb-2 md:mb-4">
                 <p className="text-blue-600 font-semibold uppercase tracking-wider text-xs md:text-sm">Why Choose Us</p>
@@ -344,9 +354,9 @@ const Home = () => {
       </section>
 
       {/* How It Works - Modern Timeline */}
-      <section className="py-8 md:py-16 lg:py-20 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-8 md:mb-16">
+      <section className="py-6 md:py-12 lg:py-16 bg-white">
+        <div className="container-custom px-4">
+          <div className="text-center mb-6 md:mb-10 lg:mb-12">
             <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Simple Process</p>
             <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
               How We Help You Get to Dubai
@@ -382,9 +392,9 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-br from-purple-50 to-blue-50">
-        <div className="container-custom">
-          <div className="text-center mb-8 md:mb-16">
+      <section className="py-6 md:py-12 lg:py-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div className="container-custom px-4">
+          <div className="text-center mb-6 md:mb-10 lg:mb-12">
             <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Success Stories</p>
             <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
               What Our Workers Say
@@ -419,7 +429,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section - Modern Design */}
-      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
+      <section className="py-6 md:py-12 lg:py-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)',

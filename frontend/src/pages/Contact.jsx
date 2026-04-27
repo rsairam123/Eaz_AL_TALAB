@@ -129,9 +129,9 @@ const Contact = () => {
               <span>Chat on WhatsApp</span>
             </button>
 
-            <div className="card shadow-lg hover:shadow-xl transition-shadow p-4 md:p-6">
-              <h3 className="font-heading font-semibold text-base md:text-lg text-gray-900 mb-3 md:mb-4">Business Hours</h3>
-              <div className="space-y-2 text-xs md:text-sm">
+            <div className="card shadow-lg hover:shadow-xl transition-shadow p-3 md:p-5 lg:p-6">
+              <h3 className="font-heading font-semibold text-sm md:text-base lg:text-lg text-gray-900 mb-2 md:mb-3 lg:mb-4">Business Hours</h3>
+              <div className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Monday - Friday</span>
                   <span className="text-gray-900 font-medium">9:00 AM - 6:00 PM</span>
