@@ -402,26 +402,26 @@ const Home = () => {
             <div className="h-0.5 md:h-1 w-16 md:w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
+          <div className="grid md:grid-cols-3 gap-2 md:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="card card-hover p-2.5 md:p-6">
-                <div className="flex items-center mb-2 md:mb-4">
+              <div key={index} className="card card-hover p-1.5 md:p-6">
+                <div className="flex items-center mb-1 md:mb-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-10 h-10 md:w-16 md:h-16 rounded-full object-cover mr-2 md:mr-4 border-2 md:border-4 border-purple-100"
+                    className="w-8 h-8 md:w-16 md:h-16 rounded-full object-cover mr-1.5 md:mr-4 border md:border-4 border-purple-100"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xs md:text-base leading-tight">{testimonial.name}</h4>
-                    <p className="text-xs md:text-sm text-gray-600">{testimonial.role}</p>
+                    <h4 className="font-bold text-gray-900 text-[10px] md:text-base leading-tight">{testimonial.name}</h4>
+                    <p className="text-[9px] md:text-sm text-gray-600 leading-tight">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="flex mb-1.5 md:mb-3">
+                <div className="flex mb-0.5 md:mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <FaStar key={i} className="text-yellow-400 text-xs md:text-base" />
+                    <FaStar key={i} className="text-yellow-400 text-[9px] md:text-base" />
                   ))}
                 </div>
-                <p className="text-gray-700 leading-snug italic text-xs md:text-sm lg:text-base">"{testimonial.text}"</p>
+                <p className="text-gray-700 leading-tight italic text-[10px] md:text-sm lg:text-base">"{testimonial.text}"</p>
               </div>
             ))}
           </div>
