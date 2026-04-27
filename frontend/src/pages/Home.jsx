@@ -224,7 +224,7 @@ const Home = () => {
                 color: 'purple'
               }
             ].map((item, index) => (
-              <div key={index} className="card card-hover text-center group p-2 py-3 md:p-5 lg:p-6">
+              <div key={index} className="card card-hover text-center group !p-2 !py-2 md:!p-5 lg:!p-6 !min-h-0 md:!min-h-[300px]">
                 <div className={`w-6 h-6 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-1 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
                   {React.cloneElement(item.icon, { className: 'text-sm md:text-2xl lg:text-4xl text-' + item.color + '-500' })}
                 </div>
@@ -404,7 +404,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-2 md:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="card card-hover p-2 py-2.5 md:p-6">
+              <div key={index} className="card card-hover !p-2 !py-2 md:!p-6 !min-h-0 md:!min-h-[300px]">
                 <div className="flex items-center mb-1 md:mb-4">
                   <img
                     src={testimonial.image}

@@ -46,7 +46,7 @@
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-soft p-6 transition-all duration-200 min-h-[300px];
+    @apply bg-white rounded-xl shadow-soft p-6 md:p-6 transition-all duration-200 md:min-h-[300px];
   }
 
   .card-hover {
