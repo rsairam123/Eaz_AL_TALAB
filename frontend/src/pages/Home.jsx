@@ -117,38 +117,38 @@ const Home = () => {
           }}></div>
         </div>
         
-        <div className="container-custom relative z-10 py-20 md:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container-custom relative z-10 py-8 md:py-20 lg:py-28">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
             <div className="animate-fade-in">
               {/* Trust Badge */}
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-full mb-6 border border-white/20">
-                <FaCertificate className="text-yellow-300 text-lg" />
-                <span className="text-sm font-semibold">Government Licensed Agency</span>
+              <div className="inline-flex items-center space-x-1.5 md:space-x-2 bg-white/10 backdrop-blur-md px-3 py-1.5 md:px-5 md:py-2.5 rounded-full mb-3 md:mb-6 border border-white/20">
+                <FaCertificate className="text-yellow-300 text-sm md:text-lg" />
+                <span className="text-xs md:text-sm font-semibold">Government Licensed Agency</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold mb-3 md:mb-6 leading-tight">
                 Your Gateway to{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
                   Dubai Construction Jobs
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Connect with leading construction companies in Dubai. We provide complete visa sponsorship, 
+              <p className="text-sm md:text-lg lg:text-xl text-gray-200 mb-4 md:mb-8 leading-relaxed">
+                Connect with leading construction companies in Dubai. We provide complete visa sponsorship,
                 accommodation, and comprehensive support for skilled workers from India.
               </p>
               
-              <div className="flex flex-wrap gap-4 mb-12">
-                <Link to="/jobs" className="btn bg-white text-primary-600 hover:bg-gray-50 hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                  Explore Jobs <FaArrowRight />
+              <div className="flex flex-wrap gap-2 md:gap-4 mb-6 md:mb-12">
+                <Link to="/jobs" className="btn bg-white text-primary-600 hover:bg-gray-50 hover:shadow-xl transform hover:-translate-y-0.5 transition-all text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
+                  Explore Jobs <FaArrowRight className="text-xs md:text-base" />
                 </Link>
-                <Link to="/about" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm">
+                <Link to="/about" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
                   Learn More
                 </Link>
               </div>
               
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
                 {[
                   { value: `${stats.jobs}+`, label: 'Active Jobs', icon: <FaBriefcase /> },
                   { value: `${stats.placements}+`, label: 'Workers Placed', icon: <FaUsers /> },
@@ -156,8 +156,8 @@ const Home = () => {
                   { value: `${stats.successRate}%`, label: 'Success Rate', icon: <FaStar /> }
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-primary-100 mb-1">{stat.value}</div>
-                    <div className="text-sm text-gray-300">{stat.label}</div>
+                    <div className="text-xl md:text-2xl lg:text-3xl font-bold text-primary-100 mb-0.5 md:mb-1">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-gray-300">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -191,35 +191,35 @@ const Home = () => {
       </section>
 
       {/* Trust Indicators - Enhanced Design */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-8 md:py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             {[
               {
-                icon: <FaShieldAlt className="text-4xl text-primary-600" />,
+                icon: <FaShieldAlt className="text-2xl md:text-4xl text-blue-500" />,
                 title: 'Government Licensed',
                 description: 'Fully authorized and licensed by UAE government authorities',
-                color: 'green'
+                color: 'blue'
               },
               {
-                icon: <FaGlobe className="text-4xl text-blue-600" />,
+                icon: <FaGlobe className="text-2xl md:text-4xl text-blue-500" />,
                 title: 'India to Dubai',
                 description: 'Specialized in recruiting workers from India to UAE',
                 color: 'blue'
               },
               {
-                icon: <FaHandshake className="text-4xl text-purple-600" />,
+                icon: <FaHandshake className="text-2xl md:text-4xl text-purple-500" />,
                 title: 'Full Support',
                 description: 'Complete visa sponsorship and relocation assistance',
                 color: 'purple'
               }
             ].map((item, index) => (
-              <div key={index} className="card card-hover text-center group">
-                <div className={`w-20 h-20 bg-${item.color}-50 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform`}>
+              <div key={index} className="card card-hover text-center group p-4 md:p-6">
+                <div className={`w-12 h-12 md:w-20 md:h-20 bg-${item.color}-50 rounded-xl md:rounded-2xl flex items-center justify-center mb-2 md:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                <h3 className="text-base md:text-xl font-heading font-bold text-gray-900 mb-1.5 md:mb-3">{item.title}</h3>
+                <p className="text-xs md:text-base text-gray-600 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -227,113 +227,115 @@ const Home = () => {
       </section>
 
       {/* Job Categories - Modern Card Design */}
-      <section className="section-padding bg-white">
+      <section className="py-8 md:py-16 lg:py-20 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-block">
-              <p className="text-blue-600 font-semibold mb-2 uppercase tracking-wider text-sm">Available Positions</p>
-              <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+              <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Available Positions</p>
+              <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
                 Construction Job Categories
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+              <div className="h-0.5 md:h-1 w-16 md:w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
             </div>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-6 text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto mt-3 md:mt-6 text-sm md:text-base lg:text-lg px-4">
               We recruit skilled and unskilled workers for all construction trades with full visa sponsorship
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {jobCategories.map((category, index) => (
               <Link
                 key={index}
                 to="/jobs"
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group relative bg-white rounded-lg md:rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={category.image} 
+                <div className="relative h-24 md:h-40 lg:h-48 overflow-hidden">
+                  <img
+                    src={category.image}
                     alt={category.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      {category.icon}
+                  <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg md:rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <div className="text-lg md:text-2xl lg:text-3xl text-primary-600">
+                        {React.cloneElement(category.icon, { className: 'text-primary-600' })}
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <div className="p-3 md:p-4 lg:p-6">
+                  <h3 className="text-sm md:text-base lg:text-xl font-heading font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">
                     {category.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  <p className="text-gray-600 text-xs md:text-sm mb-2 md:mb-4 leading-relaxed line-clamp-2">
                     {category.description}
                   </p>
-                  <span className="text-blue-600 font-semibold text-sm inline-flex items-center group-hover:gap-2 transition-all">
-                    View Jobs <FaArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-blue-600 font-semibold text-xs md:text-sm inline-flex items-center group-hover:gap-2 transition-all">
+                    View Jobs <FaArrowRight className="ml-1 text-xs md:text-sm group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </Link>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Link to="/jobs" className="btn btn-primary text-lg px-8 py-4 shadow-lg hover:shadow-xl">
-              View All Construction Jobs <FaArrowRight />
+          <div className="text-center mt-6 md:mt-12">
+            <Link to="/jobs" className="btn btn-primary text-sm md:text-base lg:text-lg px-6 py-3 md:px-8 md:py-4 shadow-lg hover:shadow-xl">
+              View All Construction Jobs <FaArrowRight className="text-xs md:text-base" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Benefits Section - Enhanced Layout */}
-      <section className="section-padding bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <div>
-              <div className="inline-block mb-4">
-                <p className="text-blue-600 font-semibold uppercase tracking-wider text-sm">Why Choose Us</p>
+              <div className="inline-block mb-2 md:mb-4">
+                <p className="text-blue-600 font-semibold uppercase tracking-wider text-xs md:text-sm">Why Choose Us</p>
               </div>
-              <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-3 md:mb-6">
                 Complete Support from India to Dubai
               </h2>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              <p className="text-gray-600 mb-4 md:mb-8 text-sm md:text-base lg:text-lg leading-relaxed">
                 We provide end-to-end recruitment services for construction workers. From initial screening in India 
                 to job placement in Dubai, we handle everything including visa processing, travel arrangements, and 
                 ongoing support.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 mb-6 md:mb-10">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white transition-colors">
-                    <div className="text-blue-600 text-xl flex-shrink-0">{benefit.icon}</div>
-                    <span className="text-gray-700 font-medium">{benefit.text}</span>
+                  <div key={index} className="flex items-center space-x-2 md:space-x-3 p-2 md:p-3 rounded-lg hover:bg-white transition-colors">
+                    <div className="text-blue-600 text-sm md:text-xl flex-shrink-0">{benefit.icon}</div>
+                    <span className="text-gray-700 font-medium text-xs md:text-sm lg:text-base">{benefit.text}</span>
                   </div>
                 ))}
               </div>
               
-              <div className="flex flex-wrap gap-4">
-                <Link to="/about" className="btn btn-primary shadow-lg hover:shadow-xl">
-                  Learn More About Us <FaArrowRight />
+              <div className="flex flex-wrap gap-2 md:gap-4">
+                <Link to="/about" className="btn btn-primary shadow-lg hover:shadow-xl text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
+                  Learn More About Us <FaArrowRight className="text-xs md:text-base" />
                 </Link>
-                <Link to="/contact" className="btn btn-outline">
+                <Link to="/contact" className="btn btn-outline text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
                   Contact Us
                 </Link>
               </div>
             </div>
             
             {/* Image Grid */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2 md:gap-4 mt-6 lg:mt-0">
               {[
                 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop',
                 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop',
                 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=300&fit=crop',
                 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop'
               ].map((src, index) => (
-                <img 
+                <img
                   key={index}
-                  src={src} 
-                  alt={`Construction ${index + 1}`} 
-                  className={`rounded-2xl shadow-lg object-cover h-56 w-full hover:scale-105 transition-transform ${index % 2 === 1 ? 'mt-8' : ''}`}
+                  src={src}
+                  alt={`Construction ${index + 1}`}
+                  className={`rounded-lg md:rounded-2xl shadow-lg object-cover h-32 md:h-48 lg:h-56 w-full hover:scale-105 transition-transform ${index % 2 === 1 ? 'mt-4 md:mt-8' : ''}`}
                 />
               ))}
             </div>
@@ -342,20 +344,20 @@ const Home = () => {
       </section>
 
       {/* How It Works - Modern Timeline */}
-      <section className="section-padding bg-white">
+      <section className="py-8 md:py-16 lg:py-20 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-semibold mb-2 uppercase tracking-wider text-sm">Simple Process</p>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Simple Process</p>
+            <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
               How We Help You Get to Dubai
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <div className="h-0.5 md:h-1 w-16 md:w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-3 md:mb-6"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base lg:text-lg px-4">
               Our streamlined process makes it easy for Indian workers to secure construction jobs in Dubai
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {[
               { step: '1', title: 'Apply Online', desc: 'Browse jobs and submit your application through our website', icon: <FaRocket /> },
               { step: '2', title: 'Interview & Selection', desc: 'We conduct interviews and match you with suitable employers', icon: <FaUserTie /> },
@@ -363,16 +365,16 @@ const Home = () => {
               { step: '4', title: 'Travel to Dubai', desc: 'We arrange your travel and help you settle in Dubai', icon: <FaGlobe /> }
             ].map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                <div className="relative mb-3 md:mb-6">
+                  <div className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-400 to-blue-600 text-white rounded-xl md:rounded-2xl flex items-center justify-center text-xl md:text-2xl lg:text-3xl font-bold mx-auto shadow-lg group-hover:scale-110 transition-transform">
                     {item.step}
                   </div>
-                  <div className="absolute -top-2 -right-2 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white shadow-md">
+                  <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white shadow-md text-xs md:text-base">
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <h3 className="text-sm md:text-base lg:text-xl font-heading font-bold text-gray-900 mb-1.5 md:mb-3">{item.title}</h3>
+                <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -380,36 +382,36 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="section-padding bg-gradient-to-br from-purple-50 to-blue-50">
+      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-semibold mb-2 uppercase tracking-wider text-sm">Success Stories</p>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-blue-600 font-semibold mb-1 md:mb-2 uppercase tracking-wider text-xs md:text-sm">Success Stories</p>
+            <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold text-gray-900 mb-2 md:mb-4">
               What Our Workers Say
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+            <div className="h-0.5 md:h-1 w-16 md:w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="card card-hover">
-                <div className="flex items-center mb-4">
-                  <img 
-                    src={testimonial.image} 
+              <div key={index} className="card card-hover p-4 md:p-6">
+                <div className="flex items-center mb-3 md:mb-4">
+                  <img
+                    src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover mr-4 border-4 border-purple-100"
+                    className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mr-3 md:mr-4 border-2 md:border-4 border-purple-100"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <h4 className="font-bold text-gray-900 text-sm md:text-base">{testimonial.name}</h4>
+                    <p className="text-xs md:text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="flex mb-3">
+                <div className="flex mb-2 md:mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <FaStar key={i} className="text-yellow-400" />
+                    <FaStar key={i} className="text-yellow-400 text-xs md:text-base" />
                   ))}
                 </div>
-                <p className="text-gray-700 leading-relaxed italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 leading-relaxed italic text-xs md:text-sm lg:text-base">"{testimonial.text}"</p>
               </div>
             ))}
           </div>
@@ -417,25 +419,25 @@ const Home = () => {
       </section>
 
       {/* CTA Section - Modern Design */}
-      <section className="section-padding bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
+      <section className="py-8 md:py-16 lg:py-20 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)',
           }}></div>
         </div>
-        <div className="container-custom text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+        <div className="container-custom text-center relative z-10 px-4">
+          <h2 className="text-xl md:text-3xl lg:text-5xl font-heading font-bold mb-3 md:mb-6">
             Ready to Start Your Dubai Career?
           </h2>
-          <p className="text-xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Join thousands of Indian workers who have successfully built their careers in Dubai's construction industry. 
+          <p className="text-sm md:text-lg lg:text-xl mb-6 md:mb-10 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            Join thousands of Indian workers who have successfully built their careers in Dubai's construction industry.
             Full visa sponsorship and comprehensive support provided.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/jobs" className="btn bg-white text-blue-600 hover:bg-gray-50 shadow-xl hover:shadow-2xl text-lg px-8 py-4">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+            <Link to="/jobs" className="btn bg-white text-blue-600 hover:bg-gray-50 shadow-xl hover:shadow-2xl text-sm md:text-base lg:text-lg px-6 py-3 md:px-8 md:py-4">
               Browse Construction Jobs
             </Link>
-            <Link to="/contact" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-4">
+            <Link to="/contact" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm text-sm md:text-base lg:text-lg px-6 py-3 md:px-8 md:py-4">
               Contact Us for More Information
             </Link>
           </div>

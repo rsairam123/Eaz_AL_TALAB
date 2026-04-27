@@ -32,7 +32,7 @@ const WhatsAppWidget = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsAppClick}
-        className="w-12 h-12 md:w-14 md:h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group transform hover:scale-110"
+        className="w-12 h-12 md:w-14 md:h-14 bg-blue-400 hover:bg-blue-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group transform hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
         <FaWhatsapp className="text-2xl md:text-3xl" />

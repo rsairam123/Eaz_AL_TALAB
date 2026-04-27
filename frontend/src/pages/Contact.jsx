@@ -55,83 +55,83 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-16">
-        <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-gray-300">Get in touch for construction jobs in Dubai with visa sponsorship</p>
+      <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-white py-8 md:py-16">
+        <div className="container-custom px-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-2 md:mb-4">Contact Us</h1>
+          <p className="text-sm md:text-lg lg:text-xl text-gray-200">Get in touch for construction jobs in Dubai with visa sponsorship</p>
         </div>
       </div>
 
-      <div className="container-custom py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1 space-y-6">
-            <div className="card shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center">
-                  <FaBuilding className="text-white text-xl" />
+      <div className="container-custom py-8 md:py-16 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className="lg:col-span-1 space-y-4 md:space-y-6">
+            <div className="card shadow-lg hover:shadow-xl transition-shadow p-4 md:p-6">
+              <div className="flex items-center space-x-2 md:space-x-3 mb-3 md:mb-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FaBuilding className="text-white text-base md:text-xl" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-xl text-gray-900">EAZ AL TALAB</h3>
-                  <p className="text-sm text-gray-600">Dubai Construction Recruitment</p>
+                  <h3 className="font-heading font-bold text-base md:text-xl text-gray-900">EAZ AL TALAB</h3>
+                  <p className="text-xs md:text-sm text-gray-600">Dubai Construction Recruitment</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
                 Government-licensed recruitment agency specializing in placing Indian construction workers in Dubai, UAE with full visa sponsorship.
               </p>
             </div>
 
-            <div className="card shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Contact Information</h3>
+            <div className="card shadow-lg hover:shadow-xl transition-shadow space-y-3 md:space-y-4 p-4 md:p-6">
+              <h3 className="font-heading font-semibold text-base md:text-lg text-gray-900 mb-3 md:mb-4">Contact Information</h3>
               
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaPhone className="text-blue-700" />
+              <div className="flex items-start space-x-3 md:space-x-4">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaPhone className="text-blue-700 text-sm md:text-base" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-600 mb-1">Phone Numbers</p>
-                  <a href="tel:+916304016994" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block">
+                  <p className="text-xs md:text-sm text-gray-600 mb-1">Phone Numbers</p>
+                  <a href="tel:+916304016994" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block text-sm md:text-base">
                     +91 6304016994
                   </a>
-                  <a href="tel:+917075018407" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block mt-1">
+                  <a href="tel:+917075018407" className="text-gray-900 font-medium hover:text-blue-600 transition-colors block mt-1 text-sm md:text-base">
                     +91 7075018407
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaEnvelope className="text-orange-700" />
+              <div className="flex items-start space-x-3 md:space-x-4">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaEnvelope className="text-orange-700 text-sm md:text-base" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-600 mb-1">Email</p>
-                  <a href="mailto:sairam280403@gmail.com" className="text-gray-900 font-medium hover:text-orange-600 transition-colors break-all">
+                  <p className="text-xs md:text-sm text-gray-600 mb-1">Email</p>
+                  <a href="mailto:sairam280403@gmail.com" className="text-gray-900 font-medium hover:text-orange-600 transition-colors break-all text-sm md:text-base">
                     sairam280403@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FaMapMarkerAlt className="text-purple-700" />
+              <div className="flex items-start space-x-3 md:space-x-4">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FaMapMarkerAlt className="text-purple-700 text-sm md:text-base" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-600 mb-1">Location</p>
-                  <p className="text-gray-900 font-medium">India & Dubai, UAE</p>
+                  <p className="text-xs md:text-sm text-gray-600 mb-1">Location</p>
+                  <p className="text-gray-900 font-medium text-sm md:text-base">India & Dubai, UAE</p>
                 </div>
               </div>
             </div>
 
             <button
               onClick={handleWhatsAppClick}
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 md:py-4 px-4 md:px-6 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 md:space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
             >
-              <FaWhatsapp className="text-2xl" />
+              <FaWhatsapp className="text-xl md:text-2xl" />
               <span>Chat on WhatsApp</span>
             </button>
 
-            <div className="card shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Business Hours</h3>
-              <div className="space-y-2 text-sm">
+            <div className="card shadow-lg hover:shadow-xl transition-shadow p-4 md:p-6">
+              <h3 className="font-heading font-semibold text-base md:text-lg text-gray-900 mb-3 md:mb-4">Business Hours</h3>
+              <div className="space-y-2 text-xs md:text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Monday - Friday</span>
                   <span className="text-gray-900 font-medium">9:00 AM - 6:00 PM</span>
@@ -149,8 +149,8 @@ const Contact = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <div className="card shadow-lg hover:shadow-xl transition-shadow">
-              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <div className="card shadow-lg hover:shadow-xl transition-shadow p-4 md:p-6 lg:p-8">
+              <h2 className="text-xl md:text-2xl font-heading font-bold text-gray-900 mb-4 md:mb-6">Send Us a Message</h2>
               
               {success && (
                 <div className="mb-6 p-4 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
@@ -174,10 +174,10 @@ const Contact = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                       Full Name *
                     </label>
                     <input
@@ -187,13 +187,13 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="input"
+                      className="input text-sm md:text-base"
                       placeholder="John Doe"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                       Email Address (Optional)
                     </label>
                     <input
@@ -202,15 +202,15 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="input"
+                      className="input text-sm md:text-base"
                       placeholder="john@example.com"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="phone" className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                       Phone Number *
                     </label>
                     <input
@@ -220,13 +220,13 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="input"
+                      className="input text-sm md:text-base"
                       placeholder="+91 1234567890"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="subject" className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                       Subject (Optional)
                     </label>
                     <input
@@ -235,14 +235,14 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="input"
+                      className="input text-sm md:text-base"
                       placeholder="How can we help?"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
                     Message (Optional)
                   </label>
                   <textarea
@@ -250,8 +250,8 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows="6"
-                    className="input resize-none"
+                    rows="4"
+                    className="input resize-none text-sm md:text-base"
                     placeholder="Tell us more about your inquiry..."
                   ></textarea>
                 </div>
@@ -259,7 +259,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn btn-primary w-full md:w-auto px-8 py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn btn-primary w-full md:w-auto px-6 py-3 md:px-8 md:py-4 text-sm md:text-base lg:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <>
