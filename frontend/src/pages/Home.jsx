@@ -225,11 +225,11 @@ const Home = () => {
               }
             ].map((item, index) => (
               <div key={index} className="card card-hover text-center group p-1.5 md:p-5 lg:p-6">
-                <div className={`w-7 h-7 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-1 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
-                  {React.cloneElement(item.icon, { className: 'text-base md:text-2xl lg:text-4xl text-' + item.color + '-500' })}
+                <div className={`w-6 h-6 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-${item.color}-50 rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center mb-0.5 md:mb-3 lg:mb-4 mx-auto group-hover:scale-110 transition-transform`}>
+                  {React.cloneElement(item.icon, { className: 'text-sm md:text-2xl lg:text-4xl text-' + item.color + '-500' })}
                 </div>
-                <h3 className="text-xs md:text-lg lg:text-xl font-heading font-bold text-gray-900 mb-0.5 md:mb-2 lg:mb-3 leading-tight">{item.title}</h3>
-                <p className="text-[10px] md:text-sm lg:text-base text-gray-600 leading-tight md:leading-snug">{item.description}</p>
+                <h3 className="text-[10px] md:text-lg lg:text-xl font-heading font-bold text-gray-900 leading-tight">{item.title}</h3>
+                <p className="hidden md:block text-sm lg:text-base text-gray-600 leading-snug">{item.description}</p>
               </div>
             ))}
           </div>
@@ -405,23 +405,23 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-2 md:gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="card card-hover p-1.5 md:p-6">
-                <div className="flex items-center mb-1 md:mb-4">
+                <div className="flex items-center mb-0.5 md:mb-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-8 h-8 md:w-16 md:h-16 rounded-full object-cover mr-1.5 md:mr-4 border md:border-4 border-purple-100"
+                    className="w-7 h-7 md:w-16 md:h-16 rounded-full object-cover mr-1.5 md:mr-4 border md:border-4 border-purple-100"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900 text-[10px] md:text-base leading-tight">{testimonial.name}</h4>
-                    <p className="text-[9px] md:text-sm text-gray-600 leading-tight">{testimonial.role}</p>
+                    <h4 className="font-bold text-gray-900 text-[9px] md:text-base leading-tight">{testimonial.name}</h4>
+                    <p className="text-[8px] md:text-sm text-gray-600 leading-tight">{testimonial.role}</p>
                   </div>
                 </div>
                 <div className="flex mb-0.5 md:mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <FaStar key={i} className="text-yellow-400 text-[9px] md:text-base" />
+                    <FaStar key={i} className="text-yellow-400 text-[8px] md:text-base" />
                   ))}
                 </div>
-                <p className="text-gray-700 leading-tight italic text-[10px] md:text-sm lg:text-base">"{testimonial.text}"</p>
+                <p className="text-gray-700 leading-tight italic text-[9px] md:text-sm lg:text-base line-clamp-2 md:line-clamp-none">"{testimonial.text}"</p>
               </div>
             ))}
           </div>
